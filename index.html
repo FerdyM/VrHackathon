@@ -13,8 +13,9 @@
         <a-asset-item id="truck" src="./assets/garbage_truck/scene.gltf"></a-asset-item>
         <a-asset-item id="can" src="./assets/simple_cola_can/scene.gltf"></a-asset-item>
         <a-asset-item id="gray-bin" src="./assets/public_bin/scene.gltf"></a-asset-item>
-        <a-asset-item id="space" src="./assets/space/scene.gltf"></a-asset-item>
+<!--        <a-asset-item id="space" src="./assets/space/scene.gltf"></a-asset-item>-->
         <a-asset-item id="bg" src="./assets/background/scene.gltf"></a-asset-item>
+<!--        <a-asset-item id="landscape" src="./assets/forest_path/scene.gltf"></a-asset-item>-->
     </a-assets>
     <a-entity light="type: ambient; color: #ffffff"></a-entity>
     <a-entity class="trash" gltf-model="#can" position="10 1.09 -3" scale="0.2 0.2 0.2" animation="property: position; to: 0 1.09 -3; dur: 13000; easing: linear"></a-entity>
@@ -26,7 +27,7 @@
     <a-entity gltf-model="#bg" position="4 0 0" rotation="0 0 0" ></a-entity>
     <a-entity gltf-model="#bg" position="-4 0 0" rotation="0 0 0" ></a-entity>
     <a-entity gltf-model="#bg" position="0 0 4" rotation="0 90 0" scale="2 2 2"></a-entity>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="gray"></a-plane>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="gray"></a-plane>
     <a-sky id="sky" color="#add8e6"></a-sky>
 </a-scene>
 
