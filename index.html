@@ -10,6 +10,8 @@
     <a-assets>
         <a-asset-item id="conveyor" src="./assets/scene.gltf"></a-asset-item>
         <a-asset-item id="bin" src="./assets/sf_bin/scene.gltf"></a-asset-item>
+<!--        This was a test to see if we could chnage the color -->
+<!--        <a-asset-item id="bin2" src="./assets/bin_test/scene.gltf"></a-asset-item>-->
         <a-asset-item id="truck" src="./assets/garbage_truck/scene.gltf"></a-asset-item>
         <a-asset-item id="can" src="./assets/simple_cola_can/scene.gltf"></a-asset-item>
         <a-asset-item id="gray-bin" src="./assets/public_bin/scene.gltf"></a-asset-item>
@@ -17,11 +19,12 @@
         <a-asset-item id="bg" src="./assets/background/scene.gltf"></a-asset-item>
 <!--        <a-asset-item id="landscape" src="./assets/forest_path/scene.gltf"></a-asset-item>-->
     </a-assets>
+
     <a-entity light="type: ambient; color: #ffffff"></a-entity>
     <a-entity class="trash" gltf-model="#can" position="10 1.09 -3" scale="0.2 0.2 0.2" animation="property: position; to: 0 1.09 -3; dur: 13000; easing: linear"></a-entity>
     <a-entity id="truck" gltf-model="#truck" position="10 -0.3 -3" rotation="0 -180 0" scale="0.10 0.10 0.10"></a-entity>
     <a-entity gltf-model="#bin" position="1.5 0.5 -5.5" rotation="0 -180 0" scale="0.10 0.10 0.10"></a-entity>
-    <a-entity gltf-model="#bin" position="0 0.5 -6" rotation="0 -160 0" scale="0.10 0.10 0.10"></a-entity>
+    <a-entity gltf-model="#bin2" position="0 0.5 -6" rotation="0 -160 0" scale="0.10 0.10 0.10"></a-entity>
     <a-entity gltf-model="#gray-bin" position="-1.5 0.6 -5.3" rotation="0 40 0" scale="0.65 0.65 0.65"></a-entity>
     <a-entity gltf-model="#conveyor" position="0 0 -3" rotation="0 90 0" scale="1.5 1 8"></a-entity>
     <a-entity gltf-model="#bg" position="4 0 0" rotation="0 0 0" ></a-entity>
