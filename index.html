@@ -23,7 +23,22 @@
     <a-entity gltf-model="#gray-bin" position="-1.5 0.6 -5.3" rotation="0 40 0" scale="0.65 0.65 0.65"></a-entity>
     <a-entity gltf-model="#conveyor" position="0 0 -3" rotation="0 90 0" scale="1.5 1 8"></a-entity>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-    <a-sky color="#add8e6"></a-sky>
+    <a-sky id="sky" color="#add8e6"></a-sky>
 </a-scene>
+
+
+
+
+<script>
+    let colors = ['red', 'blue', 'green', 'pink'];
+    setInterval(() => {
+        document.getElementById('sky').setAttribute('color', colors[Math.floor(Math.random() * colors.length + 1)])
+    }, 1000 * 5)
+
+
+
+
+</script>
+
 </body>
 </html>
